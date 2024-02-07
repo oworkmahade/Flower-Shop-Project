@@ -28,7 +28,6 @@ body {
 
 header {
   background: rgba(229, 84, 115, 0.1);
-  max-width: 1920px;
 }
 
 .container {
@@ -172,7 +171,6 @@ header {
 }
 
 .discount-section {
-  max-width: 1922px;
   max-height: 620px;
   border-radius: 8px;
   background: rgba(229, 84, 115, 0.05);
