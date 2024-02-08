@@ -418,6 +418,19 @@ header {
   .subscribe-title {
     padding-top: 50px;
   }
+
+  /* reserve styles */
+  .reserved {
+    text-align: center;
+  }
+
+  .discount-image-container img {
+    margin-top: 260px;
+  }
+
+  .instagram {
+    margin-top: 600px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
