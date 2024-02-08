@@ -1,8 +1,20 @@
+/* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+/* shared styles */
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn {
@@ -11,29 +23,20 @@
   padding: 20px 43px;
   border: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
 }
-
 .title {
   color: #272727;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 800;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-}
+/* header styles */
 
 header {
   background: rgba(229, 84, 115, 0.1);
-}
-
-.container {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .banner {
@@ -45,14 +48,14 @@ header {
 .banner-title {
   max-width: 708px;
   color: #272727;
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 800;
 }
 
 .banner-description {
   max-width: 634px;
   color: rgba(39, 39, 39, 0.6);
-  font-size: 18px;
+  font-size: 1.13rem;
   font-weight: 400;
   line-height: 30px;
 }
@@ -68,6 +71,7 @@ header {
   margin-top: 50px;
 }
 
+/* features styles */
 .features-flower {
   margin-top: 178px;
 }
@@ -78,7 +82,7 @@ header {
   margin-right: auto;
   color: rgba(39, 39, 39, 0.6);
   text-align: center;
-  font-size: 18px;
+  font-size: 1.13rem;
   font-weight: 400;
   line-height: 30px;
   margin-top: 24px;
@@ -163,7 +167,7 @@ header {
   color: rgba(39, 39, 39, 0.8);
   text-align: center;
   font-family: Lato;
-  font-size: 23px;
+  font-size: 1.44rem;
   font-style: normal;
   font-weight: 600;
   line-height: 35px; /* 145.833% */
@@ -189,20 +193,20 @@ header {
 
 .discount-title {
   color: #272727;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 800;
 }
 
 .discount-title span {
   color: #e55473;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 800;
 }
 
 .discount-description {
   color: rgba(39, 39, 39, 0.6);
   text-align: center;
-  font-size: 18px;
+  font-size: 1.13rem;
   font-weight: 400;
   line-height: 30px;
   padding-top: 24px;
@@ -218,13 +222,10 @@ header {
   padding-top: 100px;
 }
 
-.instagram {
-}
-
 .instagram-description {
   color: rgba(39, 39, 39, 0.6);
   text-align: center;
-  font-size: 18px;
+  font-size: 1.13rem;
   font-weight: 400;
   line-height: 30px;
   max-width: 594px;
@@ -259,7 +260,7 @@ header {
 .subscribe-description {
   color: rgba(39, 39, 39, 0.6);
   text-align: center;
-  font-size: 18px;
+  font-size: 1.13rem;
   font-weight: 400;
   line-height: 30px;
   padding-top: 16px;
@@ -285,7 +286,7 @@ header {
 .subscribe-textbox-btn-container ::placeholder {
   color: rgba(39, 39, 39, 0.6);
   font-family: Lato;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   padding-left: 22px;
 }
@@ -306,7 +307,7 @@ header {
 
 .footer-title {
   color: #e55473;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 800;
   padding-top: 128px;
 }
@@ -317,7 +318,7 @@ header {
 
 .description {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 18px;
+  font-size: 1.13rem;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
@@ -326,8 +327,103 @@ header {
 
 .reserved {
   color: rgba(255, 255, 255, 0.4);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   padding-top: 32px;
   padding-bottom: 128px;
+}
+
+@media screen and (max-width: 576px) {
+  /* banner responsive */
+  .banner {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .banner-image img {
+    width: 100%;
+  }
+
+  .banner-title {
+    font-size: 4rem;
+  }
+
+  /* features responsive */
+
+  .flower-box-container {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .flower-box-image {
+    width: 100%;
+  }
+
+  .flower-box-title-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  /* support styles */
+
+  .support-container {
+    flex-direction: column;
+    /* gap: 10px; */
+  }
+
+  /* discount styles */
+  .discount-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .discount-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .discount-title,
+  .discount-description {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .discount-btn {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  /* banner responsive */
+  .banner-image img {
+    width: 100%;
+  }
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner {
+    margin-left: 30px;
+  }
+
+  /* features responsive */
+
+  .flower-box-container {
+    flex-direction: column;
+    margin: 100px;
+  }
+
+  .flower-box-image {
+    width: 100%;
+  }
+
+  /* discount styles */
+
+  .discount-container {
+    gap: 10px;
+    padding: 20px;
+  }
 }
